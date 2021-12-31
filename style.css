@@ -1,0 +1,150 @@
+header {
+	background: #BBBBBB;
+	padding: 40px 0;
+}
+.caixa {
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+nav {
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+    padding: 15px;
+}
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+}
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+nav a:active {
+	color: #088C19;
+}
+/*Estilos do Corpo*/
+#banner {
+	width: 100%;
+}
+
+.principal{
+	margin-top: -1px;
+	background: #CCCCCC;
+	padding: 30px;
+}
+
+.titulo-centralizado {
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 19px;
+}
+
+.principal-texto {
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 19px;
+}
+
+.principal-texto strong {
+	font-weight: bolder;
+}
+.utensilios{
+    width: 10%;
+    height: 10%;
+    float: left;
+    clear: left;
+    margin: 0ch 20px 20px 0;
+	box-shadow: 0 10px 10px 0 black;
+}
+.utensilios:hover {
+    opacity: 0.3;
+}
+#missao {
+	font-size: 20px;
+}
+
+.principal-texto em {
+	font-style: italic;
+}
+
+.principal-texto em strong {
+	color: rgb(255,0,0);
+}
+
+.beneficios {
+	background: #fefefe;
+	width: 940px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+.beneficios :hover{
+	opacity: 1;
+}
+
+.beneficios-lista {
+	position: relative;
+	left: 30px;
+	padding-top: 15%;
+	list-style: disc;
+	vertical-align: top;
+}
+.lista{
+	line-height: 1px;
+}
+.itens:nth-child(5n){
+	font-weight: bolder;
+}
+.itens::before{
+	content: "★";
+}
+.itens::first-letter{
+	font-weight: bolder;
+	color: rgb(2, 2, 2);
+}
+.mapa{
+	padding: 3em 0;
+	float: left;
+	width: 940px;
+	background: radial-gradient( hsl(300, 48%, 50%) );
+}
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+.video {
+    width: 940px;
+    margin: 1em auto;
+}
+/*estilo do footer*/
+.copyright{
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}
+/* transition e media queries para deixar o site responsivo*/
